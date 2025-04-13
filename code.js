@@ -16,7 +16,7 @@ function are_isomorphic(graph1, graph2) {
         swaps[i]++;
         i=1;
 
-        //Resets the values in swaps when they exceed their indexes
+        //Resets the values in swaps when they exceed their indices
         while(swaps[i] >= i && i < v) {swaps[i++] = 0;}
 
         if(JSON.stringify(graph1) === JSON.stringify(graph2)) {return true;}
