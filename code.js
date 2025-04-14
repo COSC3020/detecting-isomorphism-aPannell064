@@ -5,6 +5,7 @@ function are_isomorphic(graph1, graph2) {
     //Array tracks number of swaps in each position at each level
     var swaps = new Array(v).fill(0);
     var i = 1;
+    var swapIndex;
     
     while(i < v) {
         swapIndex = i%2 ? swaps[i] : 0;
